@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("./images/bg.png") no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.calculatorContainer {
+    position: absolute;
+    left: 6.5%;
+    top: 28%;
+    width: 22%;
+    height: 30%;
+    background-color: grey;
+    box-shadow: inset 0 0 0 4px #000;
+    border-radius:25px;
+    padding: 30px;
+    width: 56vh;
+    height: 62vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen {
+    border-radius: 15px;
+    background-color: #eee;
+    box-shadow: inset 0 0 0 4px #000;
+    text-align: right;
+    padding: 60px 20px 20px 0px;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.topBtns {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.clearBtn{
+    width: 50%;
+background-color: aquamarine;
+}
+
+.deleteBtn{
+    width: 50%;
+background-color: lightcoral;
+}
+
+.clearBtn, .deleteBtn, .btn{
+    padding: 15px 45px;
+    border-radius: 10px;
+    flex-grow:1;
+    text-align: center;
+    box-shadow:inset 0 0 0 3px #000;
+    font-size: 25px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+
+
+.inputs1, .inputs2, .inputs3, .inputs4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.btn{
+    width: 25%;
+}
+
+.footer {
+    margin-top: 20px;
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+}
+

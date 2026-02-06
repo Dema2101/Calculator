@@ -19,12 +19,13 @@ numbers.forEach(btn => {
 
 if(operator===""){
 
-        number1 = btn.textContent;
+        number1 += btn.textContent;
         screen.textContent = number1;
         console.log("number1:", number1);
 
+
 } else {
-        number2 = btn.textContent;
+        number2 += btn.textContent;
         screen.textContent = number2;
         console.log("number2:", number2);
 

@@ -36,11 +36,11 @@ numbers.forEach(btn => {
 
 
 if(operator===""){
-
         number1 += btn.textContent;
         screen.textContent = number1;
+        if(number1==="0") number1 ="";
         console.log("number1:", number1);
-
+        
 
 } else {
         number2 += btn.textContent;
@@ -75,18 +75,22 @@ function getEqual(){
         switch (operator) {
             case "+":
                 rezultat=sum(number1,number2);
+                rezultat=Math.round(rezultat * 100) / 100
                 break;
 
             case "-":
                 rezultat=subtract(number1,number2);
+                rezultat=Math.round(rezultat * 100) / 100
                 break;
             
             case "×":
                 rezultat=multiply(number1,number2);
+                rezultat=Math.round(rezultat * 100) / 100
                 break;
 
             case "÷":
                 rezultat=divide(number1,number2);
+                rezultat=Math.round(rezultat * 100) / 100
                 break;
         }
         smallScreen.textContent="";
